@@ -1,10 +1,26 @@
-.circulo{
-    width: 16px;
-    height: 16px;
-    background-color:#999;
-    border-radius: 50%;
-    position: absolute;
+body{
+    margin: 0 auto;
+    padding: 0;
 }
-html{
-    cursor: none;
+
+.aulinha{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.aulinha img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#destaque {
+    display: flex;
+    justify-self: center;
+    padding: 1rem 0 0 0;
+    width: 1248px;
+    height: 720px;
 }

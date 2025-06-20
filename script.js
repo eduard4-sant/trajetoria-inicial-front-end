@@ -1,8 +1,22 @@
-const botao = document.querySelector(".botao");
+const img1 = document.querySelectorAll(".aulinha img");
+const destaque = document.querySelector("#destaque");
 
-const div = document.querySelector(".circulo");
-function seguirMouse(event) {
-    div.style.top = event.y + "px";
-    div.style.left = event.x + "px";
+img1.forEach((item) => {
+    item.addEventListener("click", () => {
+        destaque.src = item.src;
+    })
+})
+
+
+function imagens(i){
+    i.src
 }
-window.addEventListener("mousemove", seguirMouse)  
+
+function vasculhar(item){
+    item.addEventListener("click", imagens)
+}
+
+
+
+
+img1.forEach(vasculhar);
