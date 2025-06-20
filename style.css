@@ -1,24 +1,10 @@
-*{
-    font-size: 60px;
+.circulo{
+    width: 16px;
+    height: 16px;
+    background-color:#999;
+    border-radius: 50%;
+    position: absolute;
 }
-body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
-}
-.botao{
-    background-color: #334ff8;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-.container{
-    margin: 5px;
-}
-.mensagem {
-    color: #0f1a5d;
-    margin-top: 5px;
+html{
+    cursor: none;
 }

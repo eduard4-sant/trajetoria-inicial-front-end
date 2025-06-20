@@ -1,24 +1,8 @@
 const botao = document.querySelector(".botao");
-const container = document.querySelector(".container");
-const mensagem = document.querySelector(".mensagem");
 
-function somar(){
-    let total = parseInt(container.innerText);
-
-    if(total < 10){
-        total += 1;
-        container.innerText = total;
-        mensagem.innerText = "";
-    }else{
-        const aviso = "Limite máximo atingido!";
-        mensagem.innerText = aviso;
-        console.log(aviso);
-    }
+const div = document.querySelector(".circulo");
+function seguirMouse(event) {
+    div.style.top = event.y + "px";
+    div.style.left = event.x + "px";
 }
-
-if(botao){
-    botao.addEventListener("click", somar);
-}
-else{
-    console.log("Botão não encontrado");
-}
+window.addEventListener("mousemove", seguirMouse)  
